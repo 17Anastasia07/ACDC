@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <header>
+  
     <header class="header">
         <div class="header__logo">
           <img src="./img/pngwing.com (7).png" alt="" width="100px">
@@ -16,22 +16,75 @@
         <nav class="nav">
             <ul class="nav_menu">
                 <a href="#"><li class="nav_menu_item"><span>ABOUT</span></li></a>
-                <a href="#"></a><li class="nav_menu_item"><span-2>CLIPS</span-2></li></a>
+                <a href="#">
+                 <input class="input__clips" id="clips" type="checkbox">
+                 <label class="label__clips" for="clips">
+                  <li class="nav_menu_item"><span-2>CLIPS</span-2></li>
+                 </label>
+                 <input class="input__video" id="video" type="checkbox">
+                 <label class="label__video" for="video">
+                 <div class="clips">
+                  CLICK ME!
+                 </div>
+                 </label>
+                  <div class="video">
+                    <div class="videos">
+                      <iframe width="350" height="235" src="https://www.youtube.com/embed/pAgnJDJN4VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>
+                      <iframe width="350" height="235" src="https://www.youtube.com/embed/PiZHNw1MtzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>
+                  </div>
+                  </div>
+                </a>
                 <a href="#"><li class="nav_menu_item dow"><span-3>DOWNLOAD</span-3></li></a>
-                <a href="#"></a><li class="nav_menu_item">
-                  <span-4 class="jt__row">
-                    <span-4 class="jt__text">LOGIN</span-4>
-                  </span-4>
-                  <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span-4 class="jt__text">LOGIN</span-4>
-                  </span-4>
-                  <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span-4 class="jt__text">LOGIN</span-4>
-                  </span-4>
-                  <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
-                    <span-4 class="jt__text">LOGIN</span-4>
-                  </span-4>
-                </li></a>
+                <a href="#">
+                  <input class="header_login-input" id="login" type="checkbox">
+                  <label class="header_login-label" for="login">
+                    <li class="nav_menu_item">
+                      <span-4 class="jt__row">
+                        <span-4 class="jt__text">LOGIN</span-4>
+                      </span-4>
+                      <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
+                        <span-4 class="jt__text">LOGIN</span-4>
+                      </span-4>
+                      <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
+                        <span-4 class="jt__text">LOGIN</span-4>
+                      </span-4>
+                      <span-4 class="jt__row jt__row--sibling" aria-hidden="true">
+                        <span-4 class="jt__text">LOGIN</span-4>
+                      </span-4>
+                    </li>
+                  </label>
+                  <div class="login__form">
+                    <form class="form" action="">
+                      <div class="form_in">
+                        <h1 class="form__topic">Login</h1>
+                        <div class="form-info">
+                          <input type="email" class="form-control" id="email">
+                          <label class="form-label" for="email">Email address</label>
+                        </div>
+                        <br><br>
+                        <div class="form-info">
+                          <input type="password" class="form-control" id="pass">
+                          <label class="form-label" for="pass">Password</label>
+                        </div>
+                        <div class="form_remember">
+                          <div class="checkbox">
+                              <input type="checkbox" />&nbsp Remember me
+                          </div>
+                          <button class="box__button" type="submit">Login</button>
+
+        <div class="box_under">
+            <p class="under_text_1">Don't have an account?
+                <p class="under_register">Register</p>
+            </p>
+        </div>
+                        </div>
+
+                        </div>  
+                      </div>
+                
+                    </form>
+                  </div>
+                </a>
             </ul>
             </div>
         </nav>
@@ -104,7 +157,7 @@ Yes, I'm back in black
     <audio class="audio" src="./audio/AC⧸DC - Who Made Who (Official HD Video).mp3" controls></audio>
     <div class="button">
       <input class="input__button-2" id="toggle" type="checkbox">
-      <label class="label__button-2" for="toggle">
+        <label class="label__button-2" for="toggle">
         <div class="song_text-another">Lyrics</div>
       </label>
     <div class="text">
@@ -158,6 +211,5 @@ Nobody told you
     </div>
   </div>
  </div>
-    
 </body>
 </html>

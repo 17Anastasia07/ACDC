@@ -1,18 +1,18 @@
+
 body {
     background-image: url(https://th.bing.com/th/id/R.064626cdc1eabf650923f72a779d394a?rik=HckVxIgIuty49Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f6%2fb%2f284010.jpg&ehk=nRAl%2fxuhrlsj4bbZWgsfeo%2fUel3XytSHlnzKQ63Yt%2f0%3d&risl=&pid=ImgRaw&r=0);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .cards {
     display: flex;
     justify-content: space-around;
-    width: 1450px;
     margin: 0 auto;
     margin-top: -22px;
     height: 700px;
     align-items: center;
-    overflow: hidden;
 }
 .card__1 {
     width: 400px;
@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     transition: 1.5s;
     height: 550px;
-    margin-left: 200px;
+    margin-left: 220px;
     position: relative;
 }
 .card__2 {
@@ -34,6 +34,47 @@ body {
     transition: 1.5s;
     background: linear-gradient(to bottom right, rgb(255, 244, 29) 15%, rgba(25, 128, 255, 0.741) 55%, #000 90%);
 }
+
+.header_login-input {
+  display: none;
+}
+.login__form {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  background-image: url(https://th.bing.com/th/id/R.903758e5fe704e4bc717d817f71e8a6a?rik=54D8zqsBYYYi3w&riu=http%3a%2f%2f1.bp.blogspot.com%2f_hPh-ZDn3oX8%2fSvolz3L1BCI%2fAAAAAAAAAQ4%2fzRCVdrunjqY%2fw1200-h630-p-k-no-nu%2fACDC%2bOakland%2b2008%2bFront.jpg&ehk=s5Ptzcon9Xfab9vFRIagnMApHmbdzT1OtLC7VIq4Pjs%3d&risl=&pid=ImgRaw&r=0);
+  height: 100%;
+  top: 70px;
+  left: 0;
+}
+.form {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.61);
+  margin: 100px auto;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+.header_login-input[type="checkbox"]:checked ~ .login__form {
+  display: block;
+  animation: form 1.5s linear alternate;
+}
+@keyframes form {
+  0% {
+    margin-top: 800px;
+  }
+}
+
+.form_in {
+  display: flex;
+  flex-direction: column;
+}
+
 .img {
     width: 250px;
     margin: 20px auto;
@@ -133,9 +174,14 @@ body {
     color: #fff;
     text-shadow: 0 0 10px #000;
   }
-
   .input__button-2[type="checkbox"]:checked ~ .label__button-2 .song_text-another {
     background-color: #0080ff9b;
+    position: absolute;
+    left: 40px;
+  }
+  .input__button-1[type="checkbox"]:checked ~ .label__button-1 .song_text {
+    position: absolute;
+    right: 70px;
   }
   .label__button-2 {
 
@@ -209,6 +255,9 @@ body {
 }
     .nav_menu {
         display: flex;
+    }
+    .header__logo {
+      margin-top: 10px;
     }
     
     .nav_menu_item {
@@ -477,4 +526,180 @@ span-4 {
 .debug .jt__row:nth-child(odd) {
   color: white;
   background: black;
+}
+
+
+.form__topic {
+  text-align: center;
+  color: #ff0000;
+  font-size: 35px;
+}
+
+.form-label {
+  position: absolute;
+  left: 30px;
+  color: #ff0000;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  border-bottom: 1px solid #7c7c7c;
+  width: 330px;
+  padding-bottom: 25px;
+}
+.form-control {
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 20px 30px 0 3px;
+  margin-left: 30px;
+  color: #fff;
+  margin-top: 5px;
+}
+.checkbox {
+  padding-top: 50px;
+  padding-left: 30px;
+  color: #ff0000;
+}
+.box__button {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: #ff0000;
+  width: 150px;
+  font-size: 20px;
+  font-style: italic;
+  padding: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+.box__button:hover {
+  background-color: #b70000;
+  text-decoration: underline;
+  box-shadow: 0 0 10px #000;
+}
+.box_under {
+  display: flex;
+  justify-content: space-around;
+  color: #ff0000;
+  width: 500px;
+}
+.under_text_1 {
+  margin-left: -10px;
+}
+
+.input__clips[type="checkbox"]:checked ~ .label__clips .clips{
+  position: absolute;
+}
+.input__clips[type="checkbox"]:checked ~ .clips{
+  display: block;
+}
+.clips {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #64646453;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 10px;
+  left: 43%;
+  top: 93%;
+  z-index: 20;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.clips:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -18;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+/* .clips:active {
+  color: #ffffff58
+} */
+
+/* .clips:active:after {
+  background: transparent;
+}
+ */
+/* .clips:hover:before {
+  opacity: 1;
+} */
+
+.clips:after {
+  z-index: -18;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+} 
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+} 
+.input__clips {
+  display: none;
+}
+.clips {
+  display: block;
+}
+.input__video[type="checkbox"]:checked ~ .video {
+  display: block;
+}
+
+.input__video {
+  display: none;
+} 
+.video {
+  display: none;
+}
+.input__video[type="checkbox"]:checked ~ .label__video .video {
+  position: absolute;
+  display: flex;
+} 
+.videos {
+  display: flex;
+  position: absolute;
+  z-index: 50;
+  left: 16%;
+  top: 30%;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+  width: 1000px;
+  justify-content: space-around;
+  padding-top: 100px;
+  backdrop-filter: blur(10px);
+  animation: videos 3s linear alternate;
+  background: linear-gradient(to bottom right, rgb(255, 244, 29), rgba(25, 128, 255, 0.752), #000, rgba(255, 0, 0, 0.632));
+}
+@keyframes videos {
+  0% {
+    left: -100%;
+  }
+  60% {
+    left: 25%;
+  }
+  90% {
+    left: 10%;
+  }
 }
